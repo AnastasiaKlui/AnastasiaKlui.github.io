@@ -25,7 +25,7 @@ td {
     text-align: center;
 }
 
-.secondary_item {
+.secondary_item {1
     color: rgb(54, 148, 151);
     inherits: true;
 }
