@@ -42,6 +42,10 @@ td {
     }
 }
 
+div{
+    background-color: bisque ;
+}
+
 .parent {
     display: flex;
     flex-direction: row;
