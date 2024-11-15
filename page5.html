@@ -5,11 +5,38 @@
     <meta charset="UTF-8">
     <title>Сторінка 4</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        #nav{
+            justify-content: space-around;
+            display: flex;
+            padding: 5px 0;
+        }
+
+        div{
+            background-color: bisque ;
+        }
+    </style>
 </head>
 
 <body>
     <h1 id="caption">
         Музичні терміни на букву Г</h1>
+        <hr>
+        <div id="container1">
+            <ul id="nav">
+                <a href="index.html" onmouseover="changeColor(this, 'blue');" onmouseout="changeColor(this, 'black');">Головна</a>
+                <a href="index2.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Музичні терміни</a>
+                <a href="page8.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Відомі музичні твори</a>
+                <a href="page9.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Категорії музичних ристрої</a>
+                <a href="page10.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Математичні операції</a>
+            </ul>
+        
+            <script>
+                function changeColor(element, color) {
+                    element.style.color = color;
+                }
+            </script>
+        </div>
     <hr>
     <div id="container1">
         <p>
@@ -23,7 +50,7 @@
         <p>
             <b class="item">Гімн</b> – урочиста пісня або музичний твір, що прославляє певну ідею, країну чи особу.
         </p>
-        
+
         <iframe width="560" height="315" src="https://www.youtube.com/embed/Wx7vo__48oE?si=7XpzBg55J_o37wmW"
             title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

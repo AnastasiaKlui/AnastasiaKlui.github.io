@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вибір зображення</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <style>
+        #image-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+        img {
+            margin: 10px auto;
+            border: 1px solid #ccc;
+        }
+        button {
+            margin-top: 20px;
+            display: block;
+        }
+
+        #parent2{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        #nav{
+            padding: 50px 0;
+            font-family: 'Montserrat', sans-serif;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #nav2{
+            justify-content: space-around;
+            display: flex;
+            padding: 5px 0;
+        }
+
+        div{
+            background-color: bisque ;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="caption">
+        Виберіть варіант:
+    </h1>
+    <hr>
+    <div id="container1">
+        <ul id="nav">
+            <a href="index.html" onmouseover="changeColor(this, 'blue');" onmouseout="changeColor(this, 'black');">Головна</a>
+            <a href="index2.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Музичні терміни</a>
+            <a href="page8.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Відомі музичні твори</a>
+            <a href="page9.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Категорії музичних ристрої</a>
+            <a href="page10.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Математичні операції</a>
+        </ul>
+    
+        <script>
+            function changeColor(element, color) {
+                element.style.color = color;
+            }
+        </script>
+    </div>
+    <hr>
+    
+ <div class="parent2">
+
+    <nav id="nav">
+        <div><input type="radio" name="image" onclick="handleClick(this.value);"
+            value="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Bachlut1.png/220px-Bachlut1.png" id="option1">
+        <label for="option1">Нотація</label><br></div>
+
+        <div><input type="radio" name="image" onclick="handleClick(this.value);"
+            value="https://emuzker.expertus.com.ua/storage/summernote/63111717219246013.png" id="option2">
+        <label for="option2">Ритм</label><br></div>
+
+        <div><input type="radio" name="image" onclick="handleClick(this.value);"
+            value="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDtzLqixOrjV5gfc0DtybHSp-L0uvi9xQJvw&s" id="option3">
+        <label for="option3">Тембр</label><br></div>
+
+        <div><input type="radio" name="image" onclick="handleClick(this.value);"
+            value="https://upload.wikimedia.org/wikipedia/uk/0/04/%D0%A8%D0%BC%D0%B0%D1%82%D0%BE%D1%87%D0%BE%D0%BA_%D0%BF%D1%94%D1%82%D1%96_%D1%96_%D0%B2%D0%BE%D0%B2%D0%BA%D0%B0.jpg" id="option4">
+        <label for="option4">Тональність</label><br></div>
+    
+        <div><input type="radio" name="image" onclick="handleClick(this.value);"
+            value="https://upload.wikimedia.org/wikipedia/commons/1/15/Music_hairpins.png" id="option5">
+        <label for="option5">Динаміка</label></div>
+</nav>
+    <div id="image-container"></div>
+    <button id="back-button" style="display: none;">Повернутися</button>
+
+    <script>
+        function handleClick(image){
+            const imageContainer = document.getElementById('image-container');
+            const backButton = document.getElementById('back-button');
+
+            imageContainer.innerHTML = `
+                <img src="${image}" alt="Вибране зображення" width="400" height="300">
+                <img src="${image}" alt="Маленьке зображення" width="200" height="150">
+                <img src="${image}" alt="Велике зображення" width="800" height="600">`;
+
+            backButton.style.display = 'block';
+        }
+    </script>
+
+    <script>
+        const imageContainer = document.getElementById('image-container');
+        const backButton = document.getElementById('back-button');
+        const image = document.getElementsByName("image");
+
+        backButton.addEventListener('click', () => {
+            imageContainer.innerHTML = '';
+            backButton.style.display = 'none';
+            for(var i = 0; i < image.length; i++) {
+                image[i].checked = false;
+            }
+        });
+
+    </script>
+    </div>
+
+<hr>
+</body>
+
+</html>

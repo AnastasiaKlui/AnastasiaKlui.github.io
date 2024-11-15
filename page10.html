@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Математичні операції</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        #nav{
+            justify-content: space-around;
+            display: flex;
+            padding: 5px 0;
+        }
+
+        div{
+            background-color: bisque ;
+        }
+
+        #nav2{
+            justify-content: space-around;
+            display: flex;
+            padding: 50px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="caption">
+        Результити
+    </h1>
+<hr>
+<div id="container1">
+    <ul id="nav">
+        <a href="index.html" onmouseover="changeColor(this, 'blue');" onmouseout="changeColor(this, 'black');">Головна</a>
+        <a href="index2.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Музичні терміни</a>
+        <a href="page8.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Відомі музичні твори</a>
+        <a href="page9.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Категорії музичних ристрої</a>
+        <a href="page10.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Математичні операції</a>
+    </ul>
+
+    <script>
+        function changeColor(element, color) {
+            element.style.color = color;
+        }
+    </script>
+</div>
+    <hr>
+
+    <div class="parent">
+    <nav id="nav2">
+    <script>
+        var num1 = parseFloat(prompt("Введіть перше число", "0"));
+        
+        var num2 = parseFloat(prompt("Введіть друге число", "0"));
+
+        var sum = num1 + num2;
+        var difference = num1 - num2;
+
+        document.write("Сума: " + sum + "<br>");
+        document.write("Різниця: " + difference + "<br>");
+
+        var product = num1 * num2;
+        var quotient = num2 !== 0 ? (num1 / num2) : "ділення на нуль неможливе";
+
+        alert("Множення: " + product);
+        alert("Ділення: " + quotient);
+    </script>
+    </nav2>
+    </div>
+
+    <hr>
+    </body>
+
+</html>

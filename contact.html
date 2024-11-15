@@ -4,10 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <title>Контакти</title>
+    <style>
+        #nav{
+            justify-content: space-around;
+            display: flex;
+            padding: 5px 0;
+        }
+
+        div{
+            background-color: bisque ;
+        }
+
+        @media (max-width: 599px) {
+    body {
+        background-color: rgb(242, 175, 255);
+    }
+}
+
+@media (min-width: 600px) {
+    body {
+        background-color: rgb(114, 116, 142);
+    }
+}
+    </style>
 </head>
 
 <body>
     <h1 id="caption2">Про мене</h1>
+    <hr>
+    <div id="container1">
+        <ul id="nav">
+            <a href="index.html" onmouseover="changeColor(this, 'blue');" onmouseout="changeColor(this, 'black');">Головна</a>
+            <a href="index2.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Музичні терміни</a>
+            <a href="page8.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Відомі музичні твори</a>
+            <a href="page9.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Категорії музичних ристрої</a>
+            <a href="page10.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Математичні операції</a>
+        </ul>
+    
+        <script>
+            function changeColor(element, color) {
+                element.style.color = color;
+            }
+        </script>
+    </div>
     <hr>
     <div id="container1">
         <table>
@@ -38,3 +77,4 @@
 </body>
 
 </html>
+<script>src='script.js'</script>
