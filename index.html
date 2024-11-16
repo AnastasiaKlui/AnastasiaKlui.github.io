@@ -18,11 +18,35 @@
         div{
             background-color: bisque ;
         }
-        
+
+        select {
+            float: right;
+            background-color: rgb(255, 228, 237);
+            color:rgb(117, 121, 169);
+        }
     </style>
 </head>
 
-<body>   
+<body>  
+    
+    <form>
+        <select name="menu" onchange="toPage()">
+          <option value="" disabled selected>Виберіть сервіс</option>
+          <option value="https://github.com/AnastasiaKlui">Мій GitHub</option>
+          <option value="viber://chat?number=+380660055968">Мій Viber</option>
+          <option value="https://t.me/KanAnastasia">Мій Telegram</option>
+        </select>
+      </form>
+      <script>
+        function toPage() {
+          var selectedValue = document.selector('select[name="menu"]').value;
+          if (selectedValue) {
+            window.location.href = selectedValue;
+          }
+        }
+      </script>
+  
+
     <div class="div"> 
     <big></h2> <b>:)</b></big>
     <script>
