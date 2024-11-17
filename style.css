@@ -19,7 +19,9 @@ td {
 #caption {
     text-align: center;
     font-size: xx-large;
-    color: rgb(17, 138, 224);
+    color: rgb(78, 30, 134);
+    background-color: bisque;
+    padding: 20px 0;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -49,7 +51,7 @@ td {
 }
 
 div{
-    background-color: bisque ;
+    background-color: bisque;
 }
 
 .parent {
@@ -58,5 +60,16 @@ div{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
+}
+
+#nav{
+    justify-content: space-around;
+    display: flex;
+    padding: 5px 0;
+}
+
+#nav2{
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(78, 30, 134);
 }
 
