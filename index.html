@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реєєстрація</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="caption">
+        <h1>Форма реєстрації</h1>
+    </div>
+    <hr>
+    <div>
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="name">Ім'я:</label>
+                <input type="text" id="name" required>
+                <div id="nameError" class="error"></div>
+            </div>
+            <div class="form-group">
+                <label for="age">Вік:</label>
+                <input type="number" id="age" required>
+                <div id="ageError" class="error"></div>
+            </div>
+            <div class="form-group">
+                <label for="email">Електронна пошта:</label>
+                <input type="email" id="email" required>
+                <div id="emailError" class="error"></div>
+            </div>
+            <button type="button" onclick="validateAndSave()">Подати</button>
+        </form>
+    </div>
+
+    <script>
+        window.onload = () => alert("Заповніть форму:\nІм'я: тільки літери\nВік: додатнє число\nПошта: формат email");
+
+        function validateAndSave() {
+            let isValid = true;
+            let name = document.getElementById("name").value;
+            let age = document.getElementById("age").value;
+            let email = document.getElementById("email").value;
+            let nameError = document.getElementById("nameError");
+            let ageError = document.getElementById("ageError");
+            let emailError = document.getElementById("emailError");
+
+            nameError.textContent = ageError.textContent = emailError.textContent = '';
+
+            if (!/^[A-Za-zА-Яа-яЁёІіЇїЄє]+$/.test(name)) {
+                nameError.textContent = "Ім'я повинно містити лише літери.";
+                isValid = false;
+            }
+
+            if (age <= 0 || isNaN(age)) {
+                ageError.textContent = "Вік має бути додатнім числом.";
+                isValid = false;
+            }
+
+            if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email)) {
+                emailError.textContent = "Введіть правильну електронну пошту.";
+                isValid = false;
+            }
+
+            if (isValid) {
+                let year = new Date().getFullYear();
+                let content = `Ім'я: ${name}\nВік: ${age}\nEmail: ${email}`;
+                let blob = new Blob([content], { type: "text/plain" });
+                let link = document.createElement("a");
+                link.href = URL.createObjectURL(blob);
+                link.download = `${year}_${email}.txt`;
+                link.click();
+                URL.revokeObjectURL(link.href); // Очищення після завантаження
+                alert("Форма успішно подана! Файл збережено.");
+            }
+        }
+    </script>
+</body>
+</html>

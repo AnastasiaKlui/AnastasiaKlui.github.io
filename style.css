@@ -1,0 +1,54 @@
+@media (min-width: 600px) {
+    body {
+        background-color: rgb(97, 99, 124);
+    }
+}
+
+#caption {
+    text-align: center;
+    font-size: x-large;
+    color: rgb(78, 30, 134);
+    background-color: bisque;
+    padding: 5px 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+div{
+    background-color: bisque;
+}
+
+.error { color: red; font-size: 12px; }
+
+body{
+    font-family: 'Montserrat', sans-serif; 
+}
+
+form { 
+    width: 300px; 
+    margin: 0 auto; 
+    font-family: 'Montserrat', sans-serif;
+}
+
+.form-group { 
+    margin-bottom: 15px; 
+}
+
+label { 
+    display: block; 
+    font-weight: bold; 
+    color: rgb(78, 30, 134);
+    font-family: 'Montserrat', sans-serif;
+}
+
+input { 
+    width: 100%; 
+    padding: 8px; 
+    margin-top: 5px; 
+    border: 1px solid #000000; 
+    border-radius: 4px; 
+}
+        
+.error { 
+    color: red; 
+    font-size: 12px; 
+}
