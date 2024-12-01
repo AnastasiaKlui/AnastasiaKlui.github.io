@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<button onclick="switchLanguage('ua')">Українська</button>
+<script>
+   function switchLanguage(language) {
+        if (language === 'en') {
+            window.location.href = 'poll1_en.html';
+        } else {
+            window.location.href = 'poll1.html';
+        }
+    }
+</script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+<script>
+    function validateForm() {
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const feedback = document.getElementById("feedback").value;
+        const gender = document.querySelector('input[name="gender"]:checked');
+        const interests = document.querySelectorAll('input[name="interests"]:checked');
+
+        if (name === "" || email === "" || feedback === "") {
+            alert("Please fill out all required fields.");
+            return false;
+        }
+
+        if (!gender) {
+            alert("Please select a gender.");
+            return false;
+        }
+
+        if (interests.length === 0) {
+            alert("Please select at least one interest.");
+            return false;
+        }
+
+        document.getElementById("form2-text").value = 
+            `Name: ${name}\nEmail: ${email}\nGender: ${gender.value}\nInterests: ${Array.from(interests).map(i => i.value).join(", ")}\nFeedback: ${feedback}`;
+        return false; 
+    }
+</script>
+</head>
+
+<body>
+    <h1 id="caption">
+        Website Visitor Survey Form</h1>
+        <hr>
+        <div id="container1">
+            <ul id="nav">
+                <a href="index.html" onmouseover="changeColor(this, 'blue');" onmouseout="changeColor(this, 'black');">Home</a>
+                <a href="index2.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Musical Terms</a>
+                <a href="page8.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Famous Musical Works</a>
+                <a href="page9.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Categories of Musical Instruments</a>
+                <a href="page10.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Mathematical Operations</a>
+                <a href="poll1.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Survey</a>
+                <a href="poll2.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Contact Us</a>
+
+            </ul>
+        
+            <script>
+                function changeColor(element, color) {
+                    element.style.color = color;
+                }
+            </script>
+        </div>
+    <hr>
+    </br>
+    <div id="container1">
+<nav id="nav2">
+        <h3>Survey</h3>
+</nav>
+    <form onsubmit="return validateForm()">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label><br><br>
+
+        <label>Interests:</label><br>
+        <input type="checkbox" id="interest1" name="interests" value="Technology">
+        <label for="interest1">Technology</label><br>
+        <input type="checkbox" id="interest2" name="interests" value="Travel">
+        <label for="interest2">Travel</label><br>
+        <input type="checkbox" id="interest3" name="interests" value="Culture">
+        <label for="interest3">Culture</label><br>
+        <input type="checkbox" id="interest5" name="interests" value="Music">
+        <label for="interest5">Music</label><br>
+        <input type="checkbox" id="interest6" name="interests" value="Programming">
+        <label for="interest6">Programming</label><br>
+        <input type="checkbox" id="interest7" name="interests" value="Movies">
+        <label for="interest7">Movies</label><br>
+        <input type="checkbox" id="interest8" name="interests" value="Cooking">
+        <label for="interest8">Cooking</label><br>
+        <input type="checkbox" id="interest9" name="interests" value="Art">
+        <label for="interest9">Art</label><br>
+        <input type="checkbox" id="interest10" name="interests" value="Photography">
+        <label for="interest10">Photography</label><br>
+        <input type="checkbox" id="interest11" name="interests" value="Literature">
+        <label for="interest11">Literature</label><br>
+        <input type="checkbox" id="interest12" name="interests" value="Dancing">
+        <label for="interest12">Dancing</label><br>
+        <input type="checkbox" id="interest13" name="interests" value="History">
+        <label for="interest13">History</label><br>
+        <input type="checkbox" id="interest14" name="interests" value="Science">
+        <label for="interest14">Science</label><br>
+        <input type="checkbox" id="interest15" name="interests" value="Video Games">
+        <label for="interest15">Video Games</label><br>
+        <input type="checkbox" id="interest16" name="interests" value="Meditation">
+        <label for="interest16">Meditation</label><br>
+        <input type="checkbox" id="interest17" name="interests" value="Crafts">
+        <label for="interest17">Crafts</label><br>
+        <input type="checkbox" id="interest18" name="interests" value="Theater">
+        <label for="interest18">Theater</label><br>
+        <input type="checkbox" id="interest19" name="interests" value="Astronomy">
+        <label for="interest19">Astronomy</label><br>
+
+        <label for="feedback">Your Feedback:</label><br>
+        <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</div>
+<div id="container1">
+    <nav id="nav2">
+        <h3>Results</h3>
+    </nav>
+    <form>
+        <textarea id="form2-text" rows="10" cols="50" readonly></textarea><br><br>
+    </form>
+</div>
+    <hr>
+</body>
+
+</html>

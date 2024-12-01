@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<button onclick="switchLanguage('ua')">Українська</button>
+<script>
+   function switchLanguage(language) {
+        if (language === 'en') {
+            window.location.href = 'page6_en.html';
+        } else {
+            window.location.href = 'page6.html';
+        }
+    }
+</script>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Page 5</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+<body>
+    <h1 id="caption">
+        Musical Terms Starting with the Letter D</h1>
+        <hr>
+        <div id="container1">
+            <ul id="nav">
+                <a href="index.html" onmouseover="changeColor(this, 'blue');" onmouseout="changeColor(this, 'black');">Home</a>
+                <a href="index2.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Musical Terms</a>
+                <a href="page8.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Famous Musical Works</a>
+                <a href="page9.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Categories of Musical Instruments</a>
+                <a href="page10.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Mathematical Operations</a>
+                <a href="poll1.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Poll</a>
+                <a href="poll2.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Contact Us</a>
+            </ul>
+        
+            <script>
+                function changeColor(element, color) {
+                    element.style.color = color;
+                }
+            </script>
+        </div>
+    <hr>
+    </br>
+    <div id="container1">
+        <table>
+            <tr>
+                <th class=".secondary_item">Term</th>
+                <th class=".secondary_item">Meaning</th>
+            </tr>
+            <tr>
+                <td><b>Discant</b></td>
+                <td>a high voice, usually a child's or a woman's, performing the higher parts in a choir</td>
+            </tr>
+            <tr>
+                <td><b>Diminuendo</b></td>
+                <td>a male voice of medium range between tenor and bass</td>
+            </tr>
+            <tr>
+                <td><b>Conductor</b></td>
+                <td>the leader of an orchestra or choir who coordinates the performance of music</td>
+            </tr>
+            <tr>
+                <td><b>Dissonance</b></td>
+                <td>a combination of sounds that creates tension or a sense of instability</td>
+            </tr>
+            <tr>
+                <td><b>Diversion</b></td>
+                <td>a musical piece or part of a piece with a light, entertaining character</td>
+            </tr>
+            <tr>
+                <td><b>12-Tone Technique</b></td>
+                <td>a musical technique that uses all 12 notes of the chromatic scale equally</td>
+            </tr>
+            <tr>
+                <td><b>Duet</b></td>
+                <td>a musical piece or performance for two performers</td>
+            </tr>
+        </table>
+    </div>
+    <div class="parent">
+        <div class="child">
+            <p>
+                <b><i>Conductor</i></b>
+            </p>
+            <img src="https://orchestra.com.ua/images/2020/02/15/golovniy-derigent.jpg" alt="Conductor" width="400dp">
+        </div>
+        <div class="child">
+            <p>
+                <b><i>Diversion</i></b>
+            </p>
+            <img src="https://lh4.googleusercontent.com/proxy/xpJctpLU6GEcSBvVPsaMWSLjoaWLq45F5OF7eRh9NEhdM27FkbgwR0xYwLoeZNQT4FYIzXwoIIJ15eTXHam9BcKQJKnlYVCFl2taz3lmnQ06v4Mqk2uXzx6KUfk"
+                alt="Diversion" width="400dp">
+        </div>
+    </div>
+    <hr>
+    <a href="index.html">Go to Home Page</a>
+</body>
+
+</html>

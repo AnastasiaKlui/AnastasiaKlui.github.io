@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<button onclick="switchLanguage('en')">English</button>
+<script>
+   function switchLanguage(language) {
+        if (language === 'en') {
+            window.location.href = 'poll1_en.html';
+        } else {
+            window.location.href = 'poll1.html';
+        }
+    }
+</script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Опитування</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+<script>
+    function validateForm() {
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const feedback = document.getElementById("feedback").value;
+        const gender = document.querySelector('input[name="gender"]:checked');
+        const interests = document.querySelectorAll('input[name="interests"]:checked');
+
+        if (name === "" || email === "" || feedback === "") {
+            alert("Будь ласка, заповніть всі обов'язкові поля.");
+            return false;
+        }
+
+        if (!gender) {
+            alert("Будь ласка, виберіть стать.");
+            return false;
+        }
+
+        if (interests.length === 0) {
+            alert("Будь ласка, виберіть хоча б один інтерес.");
+            return false;
+        }
+
+        document.getElementById("form2-text").value = 
+            `Ім'я: ${name}\nEmail: ${email}\nСтать: ${gender.value}\nІнтереси: ${Array.from(interests).map(i => i.value).join(", ")}\nВідгук: ${feedback}`;
+        return false; 
+    }
+</script>
+</head>
+
+<body>
+    <h1 id="caption">
+        Форма опитування відвідувачів сайту</h1>
+        <hr>
+        <div id="container1">
+            <ul id="nav">
+                <a href="index.html" onmouseover="changeColor(this, 'blue');" onmouseout="changeColor(this, 'black');">Головна</a>
+                <a href="index2.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Музичні терміни</a>
+                <a href="page8.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Відомі музичні твори</a>
+                <a href="page9.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Категорії музичних ристрої</a>
+                <a href="page10.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Математичні операції</a>
+                <a href="poll1.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Опитування</a>
+                <a href="poll2.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Написати нам</a>
+
+            </ul>
+        
+            <script>
+                function changeColor(element, color) {
+                    element.style.color = color;
+                }
+            </script>
+        </div>
+    <hr>
+    </br>
+    <div id="container1">
+<nav id="nav2">
+        <h3>Опитування</h3>
+</nav>
+    <form onsubmit="return validateForm()">
+        <label for="name">Ім'я:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label>Стать:</label><br>
+        <input type="radio" id="male" name="gender" value="Чоловік">
+        <label for="male">Чоловік</label><br>
+        <input type="radio" id="female" name="gender" value="Жінка">
+        <label for="female">Жінка</label><br><br>
+
+        <label>Інтереси:</label><br>
+        <input type="checkbox" id="interest1" name="interests" value="Технології">
+        <label for="interest1">Технології</label><br>
+        <input type="checkbox" id="interest2" name="interests" value="Подорожі">
+        <label for="interest2">Подорожі</label><br>
+        <input type="checkbox" id="interest3" name="interests" value="Культура">
+        <label for="interest3">Культура</label><br>
+        <input type="checkbox" id="interest5" name="interests" value="Музика">
+        <label for="interest5">Музика</label><br>
+        <input type="checkbox" id="interest6" name="interests" value="Програмування">
+        <label for="interest6">Програмування</label><br>
+        <input type="checkbox" id="interest7" name="interests" value="Фільми">
+        <label for="interest7">Фільми</label><br>
+        <input type="checkbox" id="interest8" name="interests" value="Кулінарія">
+        <label for="interest8">Кулінарія</label><br>
+        <input type="checkbox" id="interest9" name="interests" value="Мистецтво">
+        <label for="interest9">Мистецтво</label><br>
+        <input type="checkbox" id="interest10" name="interests" value="Фотографія">
+        <label for="interest10">Фотографія</label><br>
+        <input type="checkbox" id="interest11" name="interests" value="Література">
+        <label for="interest11">Література</label><br>
+        <input type="checkbox" id="interest12" name="interests" value="Танці">
+        <label for="interest12">Танці</label><br>
+        <input type="checkbox" id="interest13" name="interests" value="Історія">
+        <label for="interest13">Історія</label><br>
+        <input type="checkbox" id="interest14" name="interests" value="Наука">
+        <label for="interest14">Наука</label><br>
+        <input type="checkbox" id="interest15" name="interests" value="Відеоігри">
+        <label for="interest15">Відеоігри</label><br>
+        <input type="checkbox" id="interest16" name="interests" value="Медитація">
+        <label for="interest16">Медитація</label><br>
+        <input type="checkbox" id="interest17" name="interests" value="Рукоділля">
+        <label for="interest17">Рукоділля</label><br>
+        <input type="checkbox" id="interest18" name="interests" value="Театр">
+        <label for="interest18">Театр</label><br>
+        <input type="checkbox" id="interest19" name="interests" value="Астрономія">
+        <label for="interest19">Астрономія</label><br>
+
+
+        <label for="feedback">Ваш відгук:</label><br>
+        <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Підтвердити">
+        <input type="reset" value="Очисити">
+    </form>
+</div>
+<div id="container1">
+    <nav id="nav2">
+        <h3>Результати</h3>
+    </nav>
+    <form>
+        <textarea id="form2-text" rows="10" cols="50" readonly></textarea><br><br>
+    </form>
+</div>
+    <hr>
+</body>
+
+</html>

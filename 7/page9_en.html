@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<button onclick="switchLanguage('en')">English</button>
+<script>
+   function switchLanguage(language) {
+        if (language === 'en') {
+            window.location.href = 'page9_en.html';
+        } else {
+            window.location.href = 'page9.html';
+        }
+    }
+</script>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Page 8</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <h1 id="caption">
+        Musical Instruments
+    </h1>
+    <hr>
+    <div id="container1">
+        <ul id="nav">
+            <a href="index.html" onmouseover="changeColor(this, 'blue');" onmouseout="changeColor(this, 'black');">Home</a>
+            <a href="index2.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Musical Terms</a>
+            <a href="page8.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Famous Musical Works</a>
+            <a href="page9.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Categories of Musical Instruments</a>
+            <a href="page10.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Mathematical Operations</a>
+            <a href="poll1.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Survey</a>
+            <a href="poll2.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Contact Us</a>
+        </ul>
+    
+        <script>
+            function changeColor(element, color) {
+                element.style.color = color;
+            }
+        </script>
+    </div>
+    <hr>
+
+    <div class="parent">
+        <div class="child">
+            <p>
+                <b><i>Violin</i></b>
+            </p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGGw4odOv7qNg7K41nm-XY_8WqDLy1cI1Deg&s" alt="Violin" width="400dp">
+        </div>
+        <div class="child">
+            <p>
+                <b><i>Flute</i></b>
+            </p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeuYwArb817A__sMFTV0RYQRXKhDGqhGkEVg&s"
+                alt="Flute" width="400dp">
+        </div>
+        <div class="child">
+            <p>
+                <b><i>Drum</i></b>
+            </p>
+            <img src="https://www.musicca.com/files/scripts/drums/static/media/drum-kit-standard.eb6cdcf0e2d2b6c360fb.png" alt="Drum" width="400dp">
+        </div>
+        <div class="child">
+            <p>
+                <b><i>Piano</i></b>
+            </p>
+            <img src="https://8nota.com.ua/uploads/shop/products/large/6b1f1f30503e21307fa978d01f228b96.jpg"
+                alt="Piano" width="400dp">
+        </div>
+        <div class="child">
+            <p>
+                <b><i>Synthesizer</i></b>
+            </p>
+            <img src="https://upsound.com.ua/image/cache/catalog/mx/sintezatori/casio-wk-7600-800x800.jpg"
+                alt="Synthesizer" width="400dp">
+        </div>
+        <div class="child">
+            <p>
+                <b><i>Electric Guitar</i></b>
+            </p>
+            <img src="https://muzikant.ua/wa-data/public/shop/products/94/40/4094/images/4861/4861.440@2x.jpg"
+                alt="Electric Guitar" width="400dp">
+        </div>
+        <div class="child">
+            <p>
+                <b><i>Triangle</i></b>
+            </p>
+            <img src="https://folk-orchestra.kharkiv.ua/wp-content/uploads/2022/01/triangle_1.jpg"
+                alt="Triangle" width="400dp">
+        </div>
+        <div class="child">
+            <p>
+                <b><i>Bongo</i></b>
+            </p>
+            <img src="https://images.prom.ua/3724732042_bongo-gon-bops.jpg"
+                alt="Bongo" width="400dp">
+        </div>
+        <div class="child">
+            <p>
+                <b><i>Trombone</i></b>
+            </p>
+            <img src="https://komora.com/assets/images/classical_instruments/brasswind/trombones/conn-selmer/bach-50b3log.jpg"
+                alt="Trombone" width="400dp">
+        </div>
+    </div>
+    <hr>
+    <br>
+</body>
+
+</html>

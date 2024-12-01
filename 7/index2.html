@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<html lang="uk"></html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Алфавіт музичних термінів</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <style>
+        #nav{
+            justify-content: space-around;
+            display: flex;
+            padding: 5px 0;
+        }
+
+        div{
+            background-color: bisque ;
+        }
+        
+    </style>
+</head>
+
+<body>    
+    <h1 id="terms">Музичні терміни</h1>
+    <hr>
+    <div id="container1">
+        <ul id="nav">
+            <a href="index.html" onmouseover="changeColor(this, 'blue');" onmouseout="changeColor(this, 'black');">Головна</a>
+            <a href="index2.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Музичні терміни</a>
+            <a href="page8.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Відомі музичні твори</a>
+            <a href="page9.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Категорії музичних ристрої</a>
+            <a href="poll1.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Опитування</a>
+            <a href="poll2.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Написати нам</a>
+        </ul>
+    
+        <script>
+            function changeColor(element, color) {
+                element.style.color = color;
+            }
+        </script>
+    </div>
+    <hr>
+    <div id="container1">
+        <ol>
+            <li><a href="page2.html">Музичні терміни на букву А</a></li>
+            <li><a href="page3.html">Музичні терміни на букву Б</a></li>
+            <li><a href="page4.html">Музичні терміни на букву В</a></li>
+            <li><a href="page5.html">Музичні терміни на букву Г</a></li>
+            <li><a href="page6.html">Музичні терміни на букву Д</a></li>
+            <li><a href="page7.html">Музичні терміни на букву Е</a></li>
+        </ol>
+    </div>
+    <hr>
+    <footer>
+        <p>&copy; 2024 Kan Anastasia.</p>
+        <p><a href="contact.html">Контакти</a> | <a>Дякую за увагу :)</a></p>
+    </footer>
+    
+</body>
+
+</html>

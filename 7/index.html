@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<html lang="uk"></html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Головна сторінка</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+
+    <style>
+        select {
+            float: right;
+            background-color: rgb(255, 228, 237);
+            color: rgb(78, 30, 134);
+        }
+    </style>
+</head>
+
+<body>  
+    
+    <form>
+        <select name="menu" onchange="toPage()">
+          <option value="" disabled selected>Виберіть сервіс</option>
+          <option value="https://github.com/AnastasiaKlui">Мій GitHub</option>
+          <option value="viber://chat?number=+380660055968">Мій Viber</option>
+          <option value="https://t.me/KanAnastasia">Мій Telegram</option>
+        </select>
+      </form>
+      <script>
+        function toPage() {
+          var selectedValue = document.querySelector('select[name="menu"]').value;
+          if (selectedValue) {
+            window.location.href = selectedValue;
+          }
+        }
+      </script>
+  
+
+    <div class="div"> 
+    <big></h2> <b>:)</b></big>
+    <script>
+      showRandomNews();
+    </script>
+    </div>
+
+    <h1 id="terms">Довідник з музичних терменів</h1>
+    <hr>
+    <div id="container1">
+        <ul id="nav">
+            <a href="index2.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Музичні терміни</a>
+            <a href="page8.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Відомі музичні твори</a>
+            <a href="page9.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Категорії музичних ристроїв</a>
+            <a href="poll1.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Опитування</a>
+            <a href="poll2.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Написати нам</a>
+        </ul>
+    
+        <script>
+            function changeColor(element, color) {
+                element.style.color = color;
+            }
+        </script>
+    </div>
+    <hr>
+    <footer>
+        <p>&copy; 2024 Kan Anastasia.</p>
+        <p><a href="contact.html">Контакти</a> | <a>Дякую за увагу :)</a></p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<button onclick="switchLanguage('en')">English</button>
+<script>
+   function switchLanguage(language) {
+        if (language === 'en') {
+            window.location.href = 'page9_en.html';
+        } else {
+            window.location.href = 'page9.html';
+        }
+    }
+</script>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Сторінка 8</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <h1 id="caption">
+        Музичні інструменти
+    </h1>
+    <hr>
+    <div id="container1">
+        <ul id="nav">
+            <a href="index.html" onmouseover="changeColor(this, 'blue');" onmouseout="changeColor(this, 'black');">Головна</a>
+            <a href="index2.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Музичні терміни</a>
+            <a href="page8.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Відомі музичні твори</a>
+            <a href="page9.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Категорії музичних ристрої</a>
+            <a href="page10.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Математичні операції</a>
+            <a href="poll1.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Опитування</a>
+            <a href="poll2.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Написати нам</a>
+        </ul>
+    
+        <script>
+            function changeColor(element, color) {
+                element.style.color = color;
+            }
+        </script>
+    </div>
+    <hr>
+
+    <div class="parent">
+        <div class="child">
+            <p>
+                <b><i>Скрипка</i></b>
+            </p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGGw4odOv7qNg7K41nm-XY_8WqDLy1cI1Deg&s" alt="Скрипка" width="400dp">
+        </div>
+        <div class="child">
+            <p>
+                <b><i>Флейта</i></b>
+            </p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeuYwArb817A__sMFTV0RYQRXKhDGqhGkEVg&s"
+                alt="Флейта" width="400dp">
+        </div>
+        <div class="child">
+            <p>
+                <b><i>Барабан</i></b>
+            </p>
+            <img src="https://www.musicca.com/files/scripts/drums/static/media/drum-kit-standard.eb6cdcf0e2d2b6c360fb.png" alt="Барабан" width="400dp">
+        </div>
+        <div class="child">
+            <p>
+                <b><i>Фортепіано</i></b>
+            </p>
+            <img src="https://8nota.com.ua/uploads/shop/products/large/6b1f1f30503e21307fa978d01f228b96.jpg"
+                alt="Фортепіано" width="400dp">
+        </div>
+        <div class="child">
+            <p>
+                <b><i>Cинтезатор</i></b>
+            </p>
+            <img src="https://upsound.com.ua/image/cache/catalog/mx/sintezatori/casio-wk-7600-800x800.jpg"
+                alt="Cинтезатор" width="400dp">
+        </div>
+        <div class="child">
+            <p>
+                <b><i>Електрогітара</i></b>
+            </p>
+            <img src="https://muzikant.ua/wa-data/public/shop/products/94/40/4094/images/4861/4861.440@2x.jpg"
+                alt="Електрогітара" width="400dp">
+        </div>
+        <div class="child">
+            <p>
+                <b><i>Трикутник</i></b>
+            </p>
+            <img src="https://folk-orchestra.kharkiv.ua/wp-content/uploads/2022/01/triangle_1.jpg"
+                alt="Трикутник" width="400dp">
+        </div>
+        <div class="child">
+            <p>
+                <b><i>Бонго</i></b>
+            </p>
+            <img src="https://images.prom.ua/3724732042_bongo-gon-bops.jpg"
+                alt="Бонго" width="400dp">
+        </div>
+        <div class="child">
+            <p>
+                <b><i>Трамбон</i></b>
+            </p>
+            <img src="https://komora.com/assets/images/classical_instruments/brasswind/trombones/conn-selmer/bach-50b3log.jpg"
+                alt="Трамбон" width="400dp">
+        </div>
+    </div>
+    <hr>
+    <br>
+</body>
+
+</html>

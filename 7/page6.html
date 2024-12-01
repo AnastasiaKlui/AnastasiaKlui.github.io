@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<button onclick="switchLanguage('en')">English</button>
+<script>
+   function switchLanguage(language) {
+        if (language === 'en') {
+            window.location.href = 'page6_en.html';
+        } else {
+            window.location.href = 'page6.html';
+        }
+    }
+</script>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Сторінка 5</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+<body>
+    <h1 id="caption">
+        Музичні терміни на букву Д</h1>
+        <hr>
+        <div id="container1">
+            <ul id="nav">
+                <a href="index.html" onmouseover="changeColor(this, 'blue');" onmouseout="changeColor(this, 'black');">Головна</a>
+                <a href="index2.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Музичні терміни</a>
+                <a href="page8.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Відомі музичні твори</a>
+                <a href="page9.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Категорії музичних ристрої</a>
+                <a href="page10.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Математичні операції</a>
+                <a href="poll1.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Опитування</a>
+                <a href="poll2.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Написати нам</a>
+            </ul>
+        
+            <script>
+                function changeColor(element, color) {
+                    element.style.color = color;
+                }
+            </script>
+        </div>
+    <hr>
+    </br>
+    <div id="container1">
+        <table>
+            <tr>
+                <th class=".secondary_item">Термін</th>
+                <th class=".secondary_item">Значення</th>
+            </tr>
+            <tr>
+                <td><b>Дискант</b></td>
+                <td>високий голос, зазвичай дитячий або жіночий, що виконує верхні партії в хорі</td>
+            </tr>
+            <tr>
+                <td><b>Димінуендо</b></td>
+                <td>чоловічий голос середнього діапазону між тенором і басом</td>
+            </tr>
+            <tr>
+                <td><b>Диригент</b></td>
+                <td>керівник оркестру або хору, який координує виконання музики</td>
+            </tr>
+            <tr>
+                <td><b>Дисонанс</b></td>
+                <td>поєднання звуків, яке створює напруженість або відчуття нестабільності</td>
+            </tr>
+            <tr>
+                <td><b>Дивертисмент</b></td>
+                <td>музичний твір або частина твору розважального характеру</td>
+            </tr>
+            <tr>
+                <td><b>Додекафонія</b></td>
+                <td>музична техніка, в якій використовуються всі 12 нот хроматичної гами рівноправно</td>
+            </tr>
+            <tr>
+                <td><b>Дует</b></td>
+                <td>музичний твір або виконання для двох виконавців</td>
+            </tr>
+        </table>
+    </div>
+    <div class="parent">
+        <div class="child">
+            <p>
+                <b><i>Диригент</i></b>
+            </p>
+            <img src="https://orchestra.com.ua/images/2020/02/15/golovniy-derigent.jpg" alt="Диригент" width="400dp">
+        </div>
+        <div class="child">
+            <p>
+                <b><i>Дивертисмент</i></b>
+            </p>
+            <img src="https://lh4.googleusercontent.com/proxy/xpJctpLU6GEcSBvVPsaMWSLjoaWLq45F5OF7eRh9NEhdM27FkbgwR0xYwLoeZNQT4FYIzXwoIIJ15eTXHam9BcKQJKnlYVCFl2taz3lmnQ06v4Mqk2uXzx6KUfk"
+                alt="Диригент" width="400dp">
+        </div>
+    </div>
+    <hr>
+    <a href="index.html">На головну сторінку</a>
+</body>
+
+</html>

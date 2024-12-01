@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<button onclick="switchLanguage('ua')">Українська</button>
+<script>
+   function switchLanguage(language) {
+        if (language === 'en') {
+            window.location.href = 'page2_en.html';
+        } else {
+            window.location.href = 'page2.html';
+        }
+    }
+</script>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Page 1</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <h1 id="caption">
+        Musical Terms Starting with A</h1>
+        <hr>
+        <div id="container1">
+            <ul id="nav">
+                <a href="index.html" onmouseover="changeColor(this, 'blue');" onmouseout="changeColor(this, 'black');">Home</a>
+                <a href="index2.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Musical Terms</a>
+                <a href="page8.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Famous Musical Works</a>
+                <a href="page9.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Categories of Musical Instruments</a>
+                <a href="poll1.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Poll</a>
+                <a href="poll2.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Contact Us</a>
+            </ul>
+        
+            <script>
+                function changeColor(element, color) {
+                    element.style.color = color;
+                }
+            </script>
+        </div>
+        
+        <hr>
+        <div id="container1">
+            <p>
+                <b class="item">A Cappella</b> – vocal performance without instrumental accompaniment.
+            </p>
+            <p>
+                <b class="item">Alto</b> – medium female or children's voice; also refers to the corresponding
+                instrumental register.
+            </p>
+            <p>
+                <b class="item">Allegretto</b> – moderately fast tempo, slightly slower than allegro.
+            </p>
+            <p>
+                <b class="item">Allegro</b> – fast and lively tempo.
+            </p>
+            <p>
+                <b class="item">Andante</b> – calm, moderate tempo, literally means "walking."
+            </p>
+            <p>
+                <b class="item">Ensemble</b> – a group of musicians performing together, or a coordinated performance.
+            </p>
+            <p>
+                <b class="item">Aria</b> – a solo vocal composition, usually with instrumental or orchestral accompaniment.
+            </p>
+        </div>
+
+    <hr>
+    </br>
+    <a href="page3.html">Next Page</a>
+</body>
+
+</html>

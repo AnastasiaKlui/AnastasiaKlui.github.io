@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<button onclick="switchLanguage('en')">English</button>
+<script>
+   function switchLanguage(language) {
+        if (language === 'en') {
+            window.location.href = 'page2_en.html';
+        } else {
+            window.location.href = 'page2.html';
+        }
+    }
+</script>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Сторінка 1</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <h1 id="caption">
+        Музичні терміни на букву А</h1>
+        <hr>
+        <div id="container1">
+            <ul id="nav">
+                <a href="index.html" onmouseover="changeColor(this, 'blue');" onmouseout="changeColor(this, 'black');">Головна</a>
+                <a href="index2.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Музичні терміни</a>
+                <a href="page8.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Відомі музичні твори</a>
+                <a href="page9.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Категорії музичних ристрої</a>
+                <a href="poll1.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Опитування</a>
+                <a href="poll2.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Написати нам</a>
+            </ul>
+        
+            <script>
+                function changeColor(element, color) {
+                    element.style.color = color;
+                }
+            </script>
+        </div>
+        
+        <hr>
+        <div id="container1">
+            <p>
+                <b class="item">Акапела</b> – вокальне виконання без інструментального супроводу.
+            </p>
+            <p>
+                <b class="item">Альт</b> – середній жіночий або дитячий голос; також стосується відповідного
+                інструментального регістру.
+            </p>
+            <p>
+                <b class="item">Алегретто</b> – помірно швидкий темп, трохи повільніший за алегро.
+            </p>
+            <p>
+                <b class="item">Алегро</b> – швидкий і жвавий темп виконання.
+            </p>
+            <p>
+                <b class="item">Анданте</b> – спокійний, помірний темп, буквально означає "йдучи".
+            </p>
+            <p>
+                <b class="item">Ансамбль</b> – група музикантів, які виконують разом, або злагоджене виконання.
+            </p>
+            <p>
+                <b class="item">Арія</b> – сольна вокальна композиція, зазвичай у супроводі інструментів або оркестру.
+            </p>
+        </div>
+
+    <hr>
+    </br>
+    <a href="page3.html"> Наступна сторінка</a>
+</body>
+
+</html>

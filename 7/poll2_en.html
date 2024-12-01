@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<button onclick="switchLanguage('ua')">Українська</button>
+<script>
+   function switchLanguage(language) {
+        if (language === 'en') {
+            window.location.href = 'poll2_en.html';
+        } else {
+            window.location.href = 'poll2.html';
+        }
+    }
+</script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        label{
+            font-family: 'Montserrat', sans-serif;
+            color: rgb(0, 0, 0); 
+        }
+    </style>
+
+<script>
+    function sendMessage() {
+        const message = document.getElementById("userMessage").value;
+        if (message === "") {
+            alert("Please enter a message.");
+            return false;
+        }
+
+        const mailtoLink = `mailto:?subject=Message from user&body=${encodeURIComponent(message)}`;
+        window.location.href = mailtoLink; 
+        return false; 
+    }
+</script>
+</head>
+
+<body>
+    <h1 id="caption">
+        Write to us</h1>
+        <hr>
+        <div id="container1">
+            <ul id="nav">
+                <a href="index.html" onmouseover="changeColor(this, 'blue');" onmouseout="changeColor(this, 'black');">Home</a>
+                <a href="index2.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Musical Terms</a>
+                <a href="page8.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Famous Musical Works</a>
+                <a href="page9.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Categories of Musical Instruments</a>
+                <a href="page10.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Mathematical Operations</a>
+                <a href="poll1.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Survey</a>
+                <a href="poll2.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Write to Us</a>
+
+            </ul>
+        
+            <script>
+                function changeColor(element, color) {
+                    element.style.color = color;
+                }
+            </script>
+        </div>
+    <hr>
+    </br>
+
+
+    <div id="container1">
+        <nav id="nav2">
+            <h2>Here you can write us a letter</h2>
+        </nav>
+        <form onsubmit="return sendMessage()">
+            <label for="userMessage">Your letter:</label><br>
+            <textarea id="userMessage" name="userMessage" rows="6" cols="50"></textarea><br><br>
+    
+            <input type="submit" value="Send">
+
+        </form>
+        <nav id="nav2">
+            <h3>Thank you, we will definitely review your letter! :)</h3>
+        </nav>
+    </div>
+
+    <hr>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<button onclick="switchLanguage('en')">English</button>
+<script>
+   function switchLanguage(language) {
+        if (language === 'en') {
+            window.location.href = 'page7_en.html';
+        } else {
+            window.location.href = 'page7.html';
+        }
+    }
+</script>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Сторінка 6</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+
+<body>
+    <h1 id="caption">
+        Музичні терміни на букву Е</h1>
+        <hr>
+        <div id="container1">
+            <ul id="nav">
+                <a href="index.html" onmouseover="changeColor(this, 'blue');" onmouseout="changeColor(this, 'black');">Головна</a>
+                <a href="index2.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Музичні терміни</a>
+                <a href="page8.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Відомі музичні твори</a>
+                <a href="page9.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Категорії музичних ристрої</a>
+                <a href="page10.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Математичні операції</a>
+                <a href="poll1.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Опитування</a>
+                <a href="poll2.html" onmouseover="changeColor(this, 'sky blue');" onmouseout="changeColor(this, 'black');">Написати нам</a>
+            </ul>
+        
+            <script>
+                function changeColor(element, color) {
+                    element.style.color = color;
+                }
+            </script>
+        </div>
+    <hr>
+    </br>
+    <div id="container1">
+        <table>
+            <tr>
+                <th class=".secondary_item">Термін</th>
+                <th class=".secondary_item">Значення</th>
+            </tr>
+            <tr>
+                <td><b>Експозиція</b></td>
+                <td>перша частина сонатної форми, де представлені основні музичні теми</td>
+            </tr>
+            <tr>
+                <td><b>Експромт</b></td>
+                <td>музичний твір, виконаний або створений без попередньої підготовки</td>
+            </tr>
+            <tr>
+                <td><b>Етюд</b></td>
+                <td>короткий музичний твір, призначений для вдосконалення техніки виконавця</td>
+            </tr>
+            <tr>
+                <td><b>Енгармонізм</b></td>
+                <td>явище, коли дві різні ноти звучать однаково, але записані по-різному (наприклад, C# і Db)</td>
+            </tr>
+            <tr>
+                <td><b>Елегія</b></td>
+                <td>музичний твір ліричного, сумного характеру</td>
+            </tr>
+            <tr>
+                <td><b>Енсепл</b></td>
+                <td>ансамбль, невелика група виконавців, які грають або співають разом</td>
+            </tr>
+            <tr>
+                <td><b>Експресія</b></td>
+                <td>моційна виразність у музиці, спосіб передачі почуттів через виконання</td>
+            </tr>
+        </table>
+    </div>
+    <div id="container2">
+        <p>
+            <b><i>Експромт</i></b>
+        </p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/jbruWIGee3k?si=skVJF6mURC0CFSJ4"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <p>
+            <b><i>Етюд</i></b>
+        </p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Wr7eA9eWWmA?si=BS3yHeR0MpbEoyRs"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <p>
+            <b><i>Елегія</i></b>
+        </p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Ie61kd4SM_Q?si=GyfGMrerag0WJKIY"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <hr>
+</body>
+<a href="index.html">На головну сторінку</a>
+</html>
