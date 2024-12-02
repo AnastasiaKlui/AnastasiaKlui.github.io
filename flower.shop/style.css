@@ -1,0 +1,71 @@
+@media (max-width: 599px) {
+    body {
+        background-color: rgb(97, 99, 124);
+    }
+}
+
+@media (min-width: 600px) {
+    body {
+        background-color: rgb(51, 51, 51);
+    }
+}
+
+#terms {
+    text-align: center;
+    font-size: 350%;
+    color: rgb(215, 168, 177);
+    font-family: 'Muli';
+}
+
+#terms2 {
+    text-align: center;
+    font-size: 150%;
+    color: rgb(215, 168, 177);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#menu {
+    padding: 15px 0;
+    text-align: center;
+}
+
+#menu a{
+    padding: 0 10px;
+    color: black;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace ;
+}
+
+div{
+    background-color: rgb(215, 168, 177) ;
+}
+
+blockquote {
+    position: relative;
+    background: #fafafa;
+    padding: 1rem;
+    margin: 1rem;
+    background: #fff;
+    border: 2px solid #ccc;
+}
+
+cite span:first-child {
+    color: #aeadad;
+    font-style: normal;
+}
+
+cite span:last-child {
+    color: black;
+    font-weight: bold;
+    font-style: normal;
+}
+
+#text {
+    position: relative;
+    background: #fafafa;
+    padding: 1rem;
+    margin: 1rem;
+    background: #fff;
+    border: 2px solid #ccc;
+    font-family: 'Montserrat', sans-serif;
+}
