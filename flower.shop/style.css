@@ -80,8 +80,9 @@ cite span:last-child {
 }
 
 .parent{
-    justify-content: space-evenly;
+    justify-content: space-around;
     display: flex;
+    margin-top: 10px;
 }
 
 .child{
@@ -91,7 +92,68 @@ cite span:last-child {
 img{
     width: 250px;
     height: 300px;
-    padding: 15px;
+    padding: 10px;
     background-color: white;
     border-radius: 10px;
+    border: 2px solid #ccc;
+}
+
+.child2{
+    position: relative;
+    background: white;
+    padding: 1rem;
+    margin: 1rem;
+    border: 2px solid #ccc;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 10px;
+    flex-grow: 4;
+}
+
+#text3{
+    text-align: center;
+    font-weight: bold;
+    color: rgb(215, 168, 177);
+    background-color: rgb(51, 51, 51);
+    padding: 10px 0;
+    font-size: 130%;
+}
+
+#text4{
+    font-weight: bold;
+    font-style: normal;
+    color: rgb(215, 168, 177);
+    justify-content: space-evenly;
+    display: flex;
+    font-style: italic;
+}
+
+#info{
+    text-align: justify;
+    padding: 10px;
+}
+
+.flower_list {
+    display: flex;
+    flex-direction: column;
+}
+
+.flower_list img{
+    width: 200px;
+    height: 199px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 16px;
+}
+
+.flower_item div{
+    margin-top: 0%;
+}
+
+.flower_item{
+    align-items: flex-start;
+}
+
+#text5{
+    color: white;
+    font-size: 16px;
 }
